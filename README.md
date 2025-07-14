@@ -44,6 +44,14 @@ pkg install proot-distro -y
 ```bash
 proot-distro install ubuntu
 ```
+2. If you are unable to download, follow the steps below:  
+2.1 Visit the webpage `https://github.com/termux/proot-distro/releases`, and download the v4.18.0 ubuntu noble version.  
+2.2 Push the downloaded file to the mobile phone.  
+2.3 Run the following command
+```bash
+mkdir -p $PREFIX/var/lib/proot-distro/dlcache
+cp /sdcard/ubuntu-noble-arm-pd-v4.18.0.tar.xz $PREFIX/var/lib/proot-distro/dlcache
+```
 
 ### Step 4: Log in to Ubuntu Distro
 1. Log in to the installed Ubuntu distribution using the following command:
